@@ -49,7 +49,6 @@ else:
 
     elif menu == 'Data':
         st.title('Data Mahasiswa')
-        st.write('TEST - bagian ini muncul')
 
         st.header('Tambah Data')
         with st.form('form_input'):
