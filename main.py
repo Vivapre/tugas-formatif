@@ -87,14 +87,14 @@ else:
             st.info('Silakan upload file CSV')
 
     elif menu == 'Grafik':
-    st.title('Visualisasi Grafik')
-    df = pd.DataFrame(st.session_state.data_mahasiswa)
-    fig1 = px.bar(df, x='Nama', y='Nilai')
-    st.plotly_chart(fig1, use_container_width=True)
-    fig2 = px.line(df, x='Nama', y='Nilai', markers=True)
-    st.plotly_chart(fig2, use_container_width=True)
-    fig3 = px.pie(df, names='Nama', values='Nilai')
-    st.plotly_chart(fig3, use_container_width=True)
+        st.title('Visualisasi Grafik')
+        df = pd.DataFrame(st.session_state.data_mahasiswa)
+        fig1 = px.bar(df, x='Nama', y='Nilai')
+        st.plotly_chart(fig1, use_container_width=True)
+        fig2 = px.line(df, x='Nama', y='Nilai', markers=True)
+        st.plotly_chart(fig2, use_container_width=True)
+        fig3 = px.pie(df, names='Nama', values='Nilai')
+        st.plotly_chart(fig3, use_container_width=True)
     
     elif menu == 'Cari & Filter':
         st.title('Cari & Filter Data')
