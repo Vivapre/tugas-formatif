@@ -16,6 +16,7 @@ if "data_mahasiswa" not in st.session_state:
 
 if not st.session_state.logged_in:
     st.title('Login')
+    st.write('Username: Fatur, Password: 1234')
     username = st.text_input('Username:')
     password = st.text_input('Password:', type='password')
     if st.button('Login', use_container_width=True):
