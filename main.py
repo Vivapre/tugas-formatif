@@ -11,7 +11,7 @@ if "data_mahasiswa" not in st.session_state:
     st.session_state.data_mahasiswa = {
         'Nama': ['Fatur', 'Arkhan', 'Galih', 'Sergio', 'Rival'],
         'Kelas': ['XI TKJ', 'XI TKJ', 'XI TKJ', 'XI TKJ', 'XI TKJ'],
-        'Nilai': [90, 85, 78, 92, 88]
+        'Nilai': [90, 85, 90, 92, 88]
     }
 
 if not st.session_state.logged_in:
@@ -48,7 +48,7 @@ else:
         col3.metric('Nilai Terendah', df['Nilai'].min())
 
     elif menu == 'Data':
-        st.title('Data Mahasiswa')
+        st.title('Data Siswa')
 
         st.header('Tambah Data')
         with st.form('form_input'):
